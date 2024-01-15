@@ -1,4 +1,5 @@
 #include "Player.hpp"
+#include "World.hpp"
 #include <string>
 #include <iostream>
 using namespace std;
@@ -7,11 +8,10 @@ Player::Player(int h, std::string n) {
     health = h;
     name = n;
     alive = true;
-    name = "Player";
 }
 
 Player::~Player() {
-    cout << "Player " << name << " has been destroyed." << endl;
+   
 }
 int Player::getHealth() {
     return health;
@@ -64,16 +64,8 @@ std::string Player::getWeapon() {
     return weapon;
 }
 
-std::string Player::getCurrentWorld() {
-    return current_world.getWorldName();
-}
-
-std::string Player::getWorldKing() {
-    return current_world.getWorldKing();
-}
-
-std::string Player::getWorldName() {
-    return current_world.getWorldName();
+World Player::getCurrentWorld() {
+    return current_world;
 }
 
 std::string Player::getName() {

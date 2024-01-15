@@ -5,7 +5,7 @@
 
 class World {
 
-public:
+private:
     std::string world_name;
     std::string world_king;
     int world_king_health;

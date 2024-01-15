@@ -33,7 +33,7 @@ cout << "Well then lets get started" << endl;
 cout << "You will now choose a weapon" << endl;
 
 cout << "[1]. The Sword of the Gods" << endl;
-cout << "[2]. The Bow of the Angles" << endl;
+cout << "[2]. The Bow of the Angels" << endl;
 cout << "[3]. The Staff of the Demons" << endl;
 cout << "[4]. The Axe of the Dwarfs" << endl;
 cout << "[5]. The Dagger of the Elves" << endl;
@@ -76,7 +76,7 @@ cout << "Now that you have chosen your weapon you will now be able to start your
 cout << "You will now be able to choose your first world" << endl;
 
 cout << "[1]. The World of the Gods" << endl;
-cout << "[2]. The World of the Angles" << endl;
+cout << "[2]. The World of the Angels" << endl;
 cout << "[3]. The World of the Demons" << endl;
 cout << "[4]. The World of the Dwarfs" << endl;
 cout << "[5]. The World of the Elves" << endl;
@@ -99,7 +99,7 @@ switch(stoi(world_chosen))
         player1.setCurrentWorld(World("The World of the Gods", "The King of the Gods"));
         break;
     case 2:
-        player1.setCurrentWorld(World("The World of the Angles", "The King of the Angles"));
+        player1.setCurrentWorld(World("The World of the Angles", "The King of the Angels"));
         break;
     case 3:
         player1.setCurrentWorld(World("The World of the Demons", "The King of the Demons"));
@@ -115,7 +115,7 @@ switch(stoi(world_chosen))
         return;
 };
 
-cout << "You have chosen " << player1.getWorldName()<< endl;
+cout << "You have chosen " << player1.getCurrentWorld().getWorldName() << endl;
 
 cout << "What a great choice!" << endl;
 

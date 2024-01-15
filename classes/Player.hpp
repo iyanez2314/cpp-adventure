@@ -28,9 +28,7 @@ public:
     void setWeapon(std::string w);
     std::string getWeapon();
     std::string getName();
-    std::string getCurrentWorld();
-    std::string getWorldKing();
-    std::string getWorldName();
+    World getCurrentWorld();
 };
 
 #endif // PLAYER_HPP
