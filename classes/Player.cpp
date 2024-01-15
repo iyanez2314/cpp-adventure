@@ -21,6 +21,10 @@ void Player::setHealth(int h) {
     health = h;
 }
 
+void Player::setCurrentWorld(World w) {
+    current_world = w;
+}
+
 void Player::printHealth() {
     cout << "Health: " << health << endl;
 }
@@ -58,6 +62,18 @@ void Player::setWeapon(std::string w) {
 
 std::string Player::getWeapon() {
     return weapon;
+}
+
+std::string Player::getCurrentWorld() {
+    return current_world.getWorldName();
+}
+
+std::string Player::getWorldKing() {
+    return current_world.getWorldKing();
+}
+
+std::string Player::getWorldName() {
+    return current_world.getWorldName();
 }
 
 std::string Player::getName() {
